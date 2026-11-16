@@ -1,0 +1,19 @@
+:root{color-scheme:dark;--navy:#071b3d;--card:#0c254a;--line:#2b4f7a;--white:#f1f8ff;--muted:#b7cee8;--blue:#1a79f8;--mint:#5de0c0}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;min-height:100dvh;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(ellipse at 25% 8%,#114e91 0%,transparent 48%),linear-gradient(140deg,#06172f,#071b3d 65%,#042e46);color:var(--white)}
+.page{min-height:100vh;min-height:100dvh;display:grid;place-items:center;padding:26px 18px}
+.panel{width:min(100%,470px);padding:38px 28px 30px;text-align:center;background:linear-gradient(145deg,#112d53,#0b2446);border:1px solid var(--line);border-radius:28px;box-shadow:0 32px 80px #0005}
+.logo{display:block;margin:0 auto 15px;border-radius:22px}
+.brand{font-size:13px;letter-spacing:.16em;font-weight:850}
+.brand span{color:#72d5d0;font-size:10px;font-weight:650}
+.icon-check{display:grid;place-items:center;width:56px;height:56px;margin:27px auto 15px;border-radius:50%;background:#0b614e;border:1px solid #5de0c0;color:#9bf9de;font-size:27px;font-weight:750}
+.icon-check.error{background:#65312e;border-color:#e9a59a;color:#ffd8d1}
+h1{font-size:clamp(24px,5vw,31px);line-height:1.22;margin:8px 0 13px;letter-spacing:-.035em}
+p{line-height:1.6;color:var(--muted)}
+#message{font-size:15px;margin:0 auto;max-width:340px}
+.action{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:27px;padding:16px 22px;border-radius:14px;background:linear-gradient(135deg,#1675f7,#0e54bd);border:1px solid #7bb5ff;color:#fff;text-decoration:none;font-size:16px;font-weight:770;box-shadow:0 12px 30px #146ef344}
+.action[hidden]{display:none}
+.action:hover{filter:brightness(1.1)}.action:focus-visible{outline:3px solid var(--mint);outline-offset:4px}
+.help{margin:17px auto 0;font-size:12px;max-width:315px}
+.footnote{border-top:1px solid #2a4568;margin:28px 0 0;padding-top:17px;font-size:12px;color:#8dacd2}
+@media(prefers-reduced-motion:no-preference){.panel{animation:rise .45s ease-out}@keyframes rise{from{transform:translateY(12px);opacity:0}to{transform:translateY(0);opacity:1}}}
